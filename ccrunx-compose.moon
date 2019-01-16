@@ -21,7 +21,7 @@ with argparse!
 
   with \option "-v --version"
     \description "Prints the ccrunx-compose version"
-    \action -> print "ccrunx-compose 0.1"
+    \action -> print "ccrunx-compose 0.2"
 
   with \flag "-x --no-cache"
     \description "Rebuilds the instance again before running"

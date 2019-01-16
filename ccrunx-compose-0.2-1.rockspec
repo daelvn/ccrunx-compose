@@ -20,7 +20,7 @@ build = {
   type = "builtin",
   install = {
     bin = {
-      ["ccrunx-compose"] = "ccrunx-compose"
+      ["ccrunx-compose"] = "ccrunx-compose.lua"
     }
   },
   copy_directories = {
