@@ -1,8 +1,8 @@
 package = "ccrunx-compose"
-version = "0.1-1"
+version = "0.2-1"
 source = {
   url = "git+ssh://git@github.com/daelvn/ccrunx-compose.git",
-  tag = "v0.1"
+  tag = "v0.2"
 }
 description = {
   summary = "Compose environments for CCRunX",
