@@ -1,5 +1,5 @@
 package = "ccrunx-compose"
-version = "0.2-1"
+version = "0.2-2"
 source = {
   url = "git+ssh://git@github.com/daelvn/ccrunx-compose.git",
   tag = "v0.2"
@@ -18,6 +18,7 @@ dependencies = {
 }
 build = {
   type = "builtin",
+  modules = {},
   install = {
     bin = {
       ["ccrunx-compose"] = "ccrunx-compose.lua"
