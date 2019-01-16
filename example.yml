@@ -1,0 +1,29 @@
+pa-all:
+  env:
+    paboot:
+      after:   "moonc ?"
+      id: 0
+    pakernel:
+      id: 25
+    pau:
+      name:     paunify
+      path:     /lib/paunify/
+      id: 1
+    paunknown:
+      name:     pax
+      image:    ccrunx-image_paunknown.ccrunx 
+      instances:
+        pax:
+          id: 255
+          path: /lib/pax/
+        paunknown:
+          id: 254
+
+  startup:
+    0:  paboot/startup.lua
+    1:  pau/init.lua
+    25: paunknown/main.lua
+
+  config: paboot/ccemux.json
+  plugins:
+    - paboot/plugins/example.jar
